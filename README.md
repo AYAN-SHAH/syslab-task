@@ -8,11 +8,11 @@ npm start   # starts backend API only
 npm run start:all  # runs backend (4000) and frontend (5173)
 ```
 
-Backend: http://localhost:4000
+Backend: http://localhost:4001
 
 Env vars (optional): create `backend/.env` or use defaults
 
-PORT=4000
+PORT=4001
 MONGODB_URI=mongodb://127.0.0.1:27017/syslab_events
 JWT_SECRET=change_me
 ADMIN_EMAIL=admin@syslab.local
