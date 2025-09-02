@@ -1,0 +1,19 @@
+{
+  "name": "syslab-event-mgmt",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "postinstall": "echo Workspaces installed",
+    "start": "npm run -w backend start",
+    "dev": "npm run -w backend dev",
+    "start:all": "concurrently -n api,web -c blue,magenta \"npm run -w backend dev\" \"npm run -w frontend dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
+
